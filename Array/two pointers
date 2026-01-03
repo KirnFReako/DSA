@@ -1,1 +1,46 @@
+Two Pointers Technique (Java / DSA)
 
+The Two Pointers technique is an efficient algorithmic approach where two indices (pointers) are used to traverse a data structure (usually an array or string) to reduce time complexity.
+
+Why Use Two Pointers?
+
+Reduces nested loops
+
+Improves time complexity from O(n²) → O(n)
+
+Common in arrays, strings, linked lists
+
+Types of Two Pointers
+1️⃣ Opposite Direction Pointers
+
+One pointer starts from the beginning
+
+Other starts from the end
+
+Move toward each other
+
+📌 Used when array is sorted
+
+Example: Check if a pair sums to target
+int[] arr = {1, 2, 3, 4, 5};
+int target = 6;
+
+int left = 0;
+int right = arr.length - 1;
+
+while (left < right) {
+    int sum = arr[left] + arr[right];
+
+    if (sum == target) {
+        System.out.println("Pair found");
+        break;
+    } else if (sum < target) {
+        left++;
+    } else {
+        right--;
+    }
+}
+
+
+⏱ Time Complexity: O(n)
+📦 Space Complexity: O(1)
