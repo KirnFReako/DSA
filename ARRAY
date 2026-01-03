@@ -1,1 +1,27 @@
+Array in Java
+What is an Array?
 
+An array is a fixed-size data structure.
+
+It stores elements of the same data type.
+
+Once created, its size cannot be changed.
+
+Example
+int[] numbers = new int[5];
+
+Ways to Initialize an Array
+1️⃣ Declaration + Initialization
+int[] arr = new int[3];
+arr[0] = 10;
+arr[1] = 20;
+arr[2] = 30;
+
+2️⃣ Declaration + Direct Values
+int[] arr = {10, 20, 30};
+
+3️⃣ Using new Keyword with Values
+int[] arr = new int[] {10, 20, 30};
+
+Accessing Array Elements
+System.out.println(arr[0]); // 10
