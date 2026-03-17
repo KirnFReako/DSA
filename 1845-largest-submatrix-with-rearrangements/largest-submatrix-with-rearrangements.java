@@ -1,4 +1,4 @@
-// Added using AI
+
 class Solution {
     public int largestSubmatrix(int[][] matrix) {
         int m = matrix.length, n = matrix[0].length;
